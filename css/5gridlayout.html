@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Grid Layout</title>
+
+<style>
+
+body{
+    background:rgb(35,54,66);
+    font-family:Arial;
+    height: 900px;
+    width: 900px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px;
+    gap:10px;
+    width:80%;
+   /* margin:50px auto;*/
+    margin-left: 900px;
+    margin-top:900px ;
+}
+
+.box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+    color: rgb(0 0 0);
+}
+
+.box1{
+    background:rgb(103,194,185);
+    grid-row:1 / 4;
+}
+
+.box2{
+    background:rgb(103,194,185);
+    grid-column:2 / 4;
+}
+
+.box3{
+    background:rgb(207,216,227);
+}
+
+.box4{
+    background:rgb(103,194,185);
+}
+
+.box5{
+    background:rgb(207,216,227);
+}
+
+.box6{
+    background:rgb(103,194,185);
+    grid-row:2 / 4;
+}
+
+.box7{
+    background:rgb(207,216,227);
+}
+
+.box8{
+    background:rgb(103,194,185);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="box box1">1</div>
+<div class="box box2">2</div>
+<div class="box box3">3</div>
+<div class="box box4">4</div>
+<div class="box box5">5</div>
+<div class="box box6">6</div>
+<div class="box box7">7</div>
+<div class="box box8">8</div>
+
+</div>
+
+</body>
+</html>

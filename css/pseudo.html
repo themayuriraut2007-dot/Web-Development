@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .li{
+                width:200px;
+                height:200px;
+                background-color:red;
+                position:relative;
+            }
+
+            .li::after {
+                content:" ";
+                display:inline-block;
+                width:0px;
+                height:20px;
+                background-color:red;
+                position:absolute;
+                left:100%;
+                bottom: 0;
+                transition:all 0.5s ease
+            }
+            .li:hover::after{
+                width:100%;
+            }
+    </style>
+</head>
+<body>
+    <div class="li"></div>
+    
+    
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color:pink;
+        }
+        .box{
+            width: 200px;
+            height:200px;
+            position: relative;
+            background-color: black;
+
+        }
+        .box::before{
+            content:" ";
+            position:absolute;
+            width:40px;
+            height:60px;
+            background:rgba(255,255,255,0.4);
+            transition:all 0.5s ease ;
+        }
+        .box:hover::before{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

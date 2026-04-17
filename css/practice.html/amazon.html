@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Amazon Login</title>
+
+<style>
+
+/* Background Image + Font */
+body{
+    margin:0;
+    font-family: sans-serif;
+    background-image:url("https://www.shutterstock.com/image-photo/los-angeles-california-july-3-600nw-2649000545.jpg");
+    background-size:cover;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://www.shutterstock.com/image-photo/los-angeles-california-july-3-600nw-2649000545.jpg");
+    background-position:center;
+    height:100vh;
+
+    /* Center login using Flexbox */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+/* Login Container */
+.login-container{
+    display:grid;
+    grid-template-columns:1fr;
+    width:350px;
+    padding:40px;
+    background:white;
+    border:2px solid #ccc;
+    outline:4px solid orange;
+    margin:20px;
+    border-radius:8px;
+}
+
+/* Logo */
+.logo{
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/* Heading Text */
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Input Fields */
+input{
+    padding:10px;
+    margin:10px 0;
+    border:1px solid gray;
+    font-size:14px;
+}
+
+/* Login Button with Gradient */
+button{
+    padding:10px;
+    margin-top:10px;
+    border:none;
+    font-size:16px;
+    color:black;
+    background:linear-gradient(to right,#ffd814,#f7ca00);
+    cursor:pointer;
+}
+
+/* Create Account Button */
+.create-btn{
+    background:linear-gradient(to right,#e7e9ec,#d5d9d9);
+}
+
+/* Footer Text */
+.footer{
+    margin-top:15px;
+    font-size:12px;
+    text-align:center;
+}
+
+/* Positioned badge */
+.badge{
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:red;
+    color:white;
+    padding:5px 10px;
+    font-size:12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="badge">Secure Login</div>
+
+<div class="login-container">
+
+<div class="logo">amazon</div>
+
+<h2>Sign in</h2>
+
+<input type="text" placeholder="Email or mobile number">
+
+<input type="password" placeholder="Password">
+
+<button>Sign In</button>
+
+<button class="create-btn">Create your Amazon account</button>
+
+<div class="footer">
+<p>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
+</div>
+
+</div>
+
+</body>
+</html>

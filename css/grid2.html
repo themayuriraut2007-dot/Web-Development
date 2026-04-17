@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        .parent {
+            width: 600px;
+            height: 600px;
+            border:2px solid black;
+            margin: 200px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding-left:90px;
+            padding-top: 30px;
+            background-color: rgba(242, 242, 106, 0.47);
+            border-radius:20px;
+            
+           
+        }
+
+        .key {
+            height:90px;
+            width: 90px;
+            background: linear-gradient(rgba(128, 128, 128, 0.5), white, rgba(128, 128, 128, 0.5));
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: black;
+          
+        }
+        
+        
+
+        .key:hover{
+            background-color: black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="key key-1">1</div>
+        <div class="key key-2">2</div>
+        <div class="key key-3">3</div>
+        <div class="key key-4">4</div>
+        <div class="key key-5">5</div>
+        <div class="key key-6">6</div>
+        <div class="key key-7">7</div>
+        <div class="key key-8">8</div>
+        <div class="key key-9">9</div>
+        <div class="key key-%">%</div>
+        <div class="key key-0">0</div>
+        <div class="key key-*">*</div>
+    </div>
+
+
+    </div>
+</body>
+
+</html>
+
+
+<!-- 1fr->1/3 1fr-> 1/3 1fr-> 1/3 */
+
+        /* 1/3-30% 2/3-40% 1/3-30% */ 
+
+
+        .child1 {
+            /* grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+            /* grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 4; */
+            grid-column: 1 / 5;
+            grid-row: 3 / 4;
+            /* grid-column: start / end; */
+
+            /* width: 100px;
+            height: px; */
+        }
+
+        .child2 {
+            /* grid-column-start: 1;
+            grid-column-end: 3; */  -->
+
+
+
+
+
+          <!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent1 {
+            display: inline-block;
+            border: 1px solid black;
+        }
+
+        .parent2 {
+            /* display: inline-block; */
+            width: fit-content;
+            border: 1px solid black;
+            /* margin-top: 10rem; */
+        }
+
+        .item1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            /* static(default), relative, absolute, fixed, sticky */
+
+            /* relative : in relation with the origin position of an element the relative position will change */
+
+            top: 100px;
+            /* right: 0; */
+            /* bottom: 0; */
+            left: 50px;
+            z-index: 3;
+        }
+
+        .item2 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: relative;
+            top: 100px;
+            left: 50px;
+            z-index: 11;
+        }
+
+        .item3{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            position: absolute;
+            top: 200px;
+            left: 150px;
+            z-index: 10;
+        }
+
+        /* z-index */
+
+    </style>
+
+</head>
+
+<body>
+    <div class="parent1">
+        <div class="item1"></div>
+    </div>
+    <div class="parent2">
+        <div class="item2"></div>
+    </div>
+    <div class="item3"></div>
+</body>
+
+</html>
+--->

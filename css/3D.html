@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Cuboid</title>
+
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #111;
+    }
+
+    .scene{
+        perspective: 900px;
+    }
+
+    .cuboid{
+        position: relative;
+        width: 200px;   /* Width */
+        height: 120px;  /* Height */
+        transform-style: preserve-3d;
+        animation: rotate 6s infinite linear;
+    }
+
+    .face{
+        position: absolute;
+        width: 200px;
+        height: 120px;
+        background: #4b79a1;
+        border: 2px solid #fff;
+        opacity: 0.9;
+    }
+
+    
+     /* .front{
+        transform: translateZ(80px);
+
+    }
+    
+    .back{
+        transform: rotateY(180deg) translateZ(80px);
+    } */
+
+    
+    .left{
+        width: 160px;  /* Depth */
+        transform-origin: left;
+        transform: rotateY(-90deg) translateX(-160px) translateZ(0);
+        height: 120px;
+        background: #283e51;
+    }
+
+    
+    .right{
+        width: 160px;
+        transform-origin: right;
+        transform: rotateY(90deg) translateX(160px);
+        height: 120px;
+        background: #3b6b92;
+    }
+
+    /* TOP */
+    .top{
+        height: 160px; /* Depth */
+        transform-origin: top;
+        transform: rotateX(90deg) translateY(-160px);
+        background: #1c2f3a;
+    }
+
+    /* BOTTOM */
+    .bottom{
+        height: 160px;
+        transform-origin: bottom;
+        transform: rotateX(-90deg) translateY(160px);
+        background: #0e1a21;
+    }
+
+    /* Rotation Animation */
+    @keyframes rotate{
+        0%{ transform: rotateX(0deg) rotateY(0deg); }
+        100%{ transform: rotateX(360deg) rotateY(360deg); }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="scene">
+    <div class="cuboid">
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+    </div>
+</div>
+
+</body>
+</html>

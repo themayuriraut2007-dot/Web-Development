@@ -1,0 +1,145 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    margin-bottom: 40px;
+    border: 6px dotted black;
+    padding: 10px;
+    width: 600px;
+    margin-left: 10px;
+}
+
+/* Common box style */
+.box {
+    width: 120px;
+    height: 120px;
+    background:red;
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    text-align: start;
+    margin-right: 5px;
+}
+
+/* Box 2 (Green) */
+.green {
+    background: green;
+}
+
+/* RELATIVE */
+.relative.green  {
+    position: relative;
+    top: 20px;
+    left: 40px;
+}
+
+/* ABSOLUTE */
+.absolute {
+    position: relative; /* parent for absolute */
+}
+
+.absolute .green {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>position: static</h2>
+<div class="container static">
+    <div class="box">One</div>
+    <div class="box green">Two</div>
+    <div class="box">Three</div>
+    <div class="box">Four</div>
+</div>
+
+<h2>position: relative</h2>
+<div class="container relative">
+    <div class="box">One</div>
+    <div class="box green">Two</div>
+    <div class="box">Three</div>
+    <div class="box">Four</div>
+</div>
+
+<h2>position: absolute</h2>
+<div class="container absolute">
+    <div class="box">One</div>
+    <div class="box green">Two</div>
+    <div class="box">Three</div>
+    <div class="box">Four</div>
+</div>
+
+</body>
+</html>  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        } 
+
+        .item1 {
+            position:absolute;
+            width: 300px;
+            height: 400px;
+            background-color: blue;
+            
+            top: 100px;
+            left: 300px;
+           
+            z-index: 8;
+        }
+        
+        .item2{
+            width:400px;
+            height:400px;
+            background-color: rgb(65, 217, 241);
+            position:relative;
+            z-index: 6;
+        
+            
+        }
+        .item3{
+            position:relative;
+            width:400px;
+            height:400px;
+            background-color: coral;
+            left:100px;
+            bottom:60px;
+            z-index: 9;
+            
+        }
+        
+    </style>
+
+</head>
+
+<body>
+        <div class="item1">
+            <h1>Box 2</h1>
+        </div>
+        
+        <div class="item2"> 
+            <h1>Box 1</h1>
+        </div>
+        <div class="item3"> 
+            <h1>Box 3</h1>
+        </div>
+    
+</body>
+
+</html>

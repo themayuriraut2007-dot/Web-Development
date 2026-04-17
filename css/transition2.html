@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        #one{
+            width: 100px;
+            height:200px;
+            background: brown;
+            animation:move 4s linear  infinite forwards;
+            
+        }
+        #two{
+            width: 300px;
+            height:100px;
+            background: brown;
+            animation:move 4s ease-in  infinite forwards;
+
+        }
+         #three{
+            width: 200px;
+            height:100px;
+            background: brown;
+            animation:move 4s ease-out infinite forwards;
+            animation-timing-function:ease-out ;
+
+
+        }
+         #four{ 
+            width: 100px;
+            height:100px;
+            background: brown;
+            animation:move 4s steps(4) infinite forwards;
+           
+        }
+        @keyframes move{
+             0%{
+                background-color:red;
+                transform: translateX(0);
+             }
+             50%{
+                background-color:blue;
+                transform: translateX(500px);
+             }
+             100% {
+                background-color: red;
+                transform: translate(0);
+             }
+            
+        }
+            
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+    <div id="one" >Box b1 </div>
+    <br>
+    <div id="two">Box b2 </div>
+    <br>
+    <div id="three" >Box b3 </div>
+    <br>
+    <div id="four">Box b4 </div>
+    </div>
+   
+</body>
+</html>

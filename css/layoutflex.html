@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parent {
+            width: 700px;
+            height:700px;
+            border: 10px dashed rgb(44, 56, 44);
+            margin:auto;
+            display: flex;  
+            flex-direction: column;
+           
+            gap: 10px;
+            justify-content: center;
+            
+            align-items: center; 
+           
+            flex-wrap: wrap;
+
+        }
+
+        .child {
+            width: 200px;
+            height: 200px;
+            background-color: violet;
+            color: rgb(19, 21, 8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child c1">
+            <span>square 1</span>
+        </div>
+        <div class="child c2">
+            <span>square 2</span>
+        </div>
+        <div class="child c3">
+            <span>square 3</span>
+        </div>
+        <div class="child c4">
+            <span>square 4</span>
+        </div>
+        <div class="child c5">
+            <span>square 5</span>
+        </div>
+        <div class="child c6">
+            <span>square 6</span>
+        </div>
+    </div>
+</body>
+
+</html>

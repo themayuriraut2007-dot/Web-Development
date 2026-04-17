@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Document </title>
+        <style>
+            .li{
+                width:200px;
+                height:200px;
+                background-color:red;
+                position:relative;
+            }
+
+            .li::after {
+                content:" ";
+                display:inline-block;
+                width:20px;
+                height:20px;
+                background-color:red;
+                position:absolute;
+                left:100%;
+                bottom: 0;
+                transition:all 0.5s ease;
+            }
+            .li:hover::after{
+                width:100%;
+            }
+        </style>
+    </head>
+    <body>
+      <!-- there 2 Types of list ->
+          1] ordered list  ( <ol> </ol> )
+          2] unordered list  ( <ul> </ul> )   
+      -->
+
+      <!-- ordered list -->
+        <ol type="A">
+          <!-- 1, a, A -->  
+            <li>
+                iteam 1
+            </li>
+            <li>
+                iteam 2
+            </li>
+            <li>
+                iteam 3
+            </li>
+            <li>
+                iteam 4
+            </li>
+        </ol>  
+
+      <!-- Unordered list -->  
+       <ul type="circle">
+        <!-- dot, square, circle -->
+        <li>
+            iteam 1
+        </li>
+        <li>
+            iteam 2
+        </li>
+        <li>
+            iteam 3
+        </li>
+        <li>
+            iteam 4
+        </li>
+      </ul>  
+      <!-- the index in list are pseudo elements -->
+    </body>
+</html>
