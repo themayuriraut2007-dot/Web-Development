@@ -1,0 +1,106 @@
+--> JavaScript Overview :-
+
+- JavaScript is a high-level programming language.
+- It is interpreted, meaning code runs line-by-line at runtime.
+- It is dynamically typed, so data types are decided during execution.
+
+-->  Where JavaScript is Used :-
+
+ - Web development (frontend scripting)
+ - Server-side development (using Node.js)
+ - Mobile apps (React Native)
+ - Desktop apps (Electron)
+
+ --> How JavaScript Runs :-
+
+- Client-side → Runs in web browsers
+- Server-side → Runs using Node.js
+
+--> Execution Process (Simplified) :-
+
+- Code → Converted to AST (Abstract Syntax Tree)
+- Parsed and interpreted
+- Executed → Output shown (e.g., on browser/UI)
+
+-->  Frameworks & Libraries :-
+
+- React (UI)
+- Express (Backend)
+- React Native (Mobile apps)
+
+--> Node.js :-
+
+- Created by Ryan Dahl (2009)
+- Allows JavaScript to run outside the browser (server-side)
+
+--> Programming Concepts
+
+Supports:
+- OOP (Object-Oriented Programming)
+- POP (Procedure-Oriented Programming)
+
+-->  Variables :-
+
+- Variables store data (like containers)
+- Types:
+var → public 
+let → protected
+const → protected,imutable i.e no change
+
+let age=23; ->Number
+let name="xyz" ->String
+let pass=true ->Boolean
+
+--> Classroom Example :-
+
+Imagine:
+School = Program
+Classroom = Function
+Benches/sections = Blocks { }
+Students = Variables
+
+ 1. var → “Whole Classroom Student”
+- A student with var can move anywhere in the classroom
+- Not restricted to one bench/section
+
+ Meaning:
+- Accessible everywhere inside the function (classroom)
+- Even if assigned inside a block (bench), still visible outside
+
+ Means:
+var = free student (no restriction)
+
+ 2. let → “Bench Student”
+- A student with let must sit on one bench only
+- Cannot go to other benches
+
+ Meaning:
+Only accessible inside that block
+
+ Means:
+let = limited student (restricted area)
+
+3. const → “Fixed Seat Topper”
+
+A const student:
+- Has a fixed seat
+- Cannot change position 
+- Cannot be replaced
+
+ Meaning:
+Value cannot change
+
+Means:
+const = fixed student (no change allowed)
+
+--> Data Types :-
+
+Primitive types:
+- Number (int, float)
+- String (group of chans)
+- Boolean (single of value true/false)
+
+Non-primative:
+- Array
+- Object
+- function
