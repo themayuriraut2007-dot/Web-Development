@@ -104,3 +104,57 @@ Non-primative:
 - Array
 - Object
 - function
+
+
+        --->   Operators  --->
+
+
+1. Operators in JavaScript
+
+- Arithmetic Operators: +, -, *, /, % (used for calculations)
+
+- Increment/Decrement: ++, -- (increase or decrease value by 1)
+
+- Comparison Operators: <, >, <=, >=, ==, === (compare values)
+
+- Logical Operators: && (AND), || (OR) (used in conditions)
+
+- Assignment Operators: =, +=, -=, *=, /= (assign values)
+
+- Member Access Operator: "."
+
+
+                            <--statement-->
+
+ javascript it has built in input and output methods.
+
+
+2. Statements & Expressions
+
+- A statement is a complete instruction in JavaScript
+
+- Input/Output statements are used to take input and show output
+
+
+3. Input Methods (Built-in)
+
+prompt() → takes input from user (popup box)
+
+
+4. Output Methods
+
+- console.log() → shows output in console
+
+- window.alert() → shows alert popup
+
+- document.write() → displays output on webpage
+
+
+
+5. HTML Connection
+
+-> JavaScript works inside an HTML document
+
+ -> It runs when the HTML page is loaded in the browser
+
+
