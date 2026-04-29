@@ -158,3 +158,50 @@ prompt() → takes input from user (popup box)
  -> It runs when the HTML page is loaded in the browser
 
 
+
+1. Naming Rules for Variables
+
+Your rules are mostly correct!
+
+ -> Unique names: Correct.
+-> Special characters: Correct—generally, only $ and _ are allowed.
+-> Alpha-numeric: Correct. They can contain numbers but cannot start with one.
+ -> Exception: You noted _ as an exception for starting a variable. You can also start variables with $.
+
+2. Variable Operations
+
+javascript
+let n1 = 2;
+let n2 = 1;
+let sum = 2 + 1; // This works, but usually you'd write: let sum = n1 + n2;
+console.log(sum);
+
+-> Note: If you want to use the variables you created, use let sum = n1 + n2;. If you hardcode 2 + 1, the result will always be 3 even if you change n1 or n2 later.
+
+
+3. Checking Data Types (typeof)
+
+-> Storing in a variable: let result = typeof(data);
+-> Directly logging: console.log(typeof(data));
+-> Correction: In your notes, you wrote typeof(data). In JavaScript, typeof is an operator, so it's more common to see it without parentheses: typeof data. Both work, but typeof data is the standard style.
+
+
+
+--> Concatenation :-
+
+Your note: "2" + "2" = "22"
+
+Evaluation: Perfect. When you use the + sign with strings, JavaScript joins them together instead of adding them mathematically.
+
+2. Type Conversion Rules :-
+
+String + String = String: Correct.
+String + Number = String: Correct. (e.g., "5" + 2 becomes "52")
+Number + String = String: Correct. (e.g., 5 + "2" becomes "52")
+Number + Number = Number: Correct. (e.g., 2 + 2 = 4)
+
+3. Type Casting (Manual Conversion) :-
+
+-> Number to String: String(123) or (123).toString()
+-> Number to Boolean: Boolean(1) (This results in true) or Boolean(0) (This results in false).
+-> String to Number: Since prompt() gives you a string, you'll often need Number("22") to turn it back into a math-ready number.
