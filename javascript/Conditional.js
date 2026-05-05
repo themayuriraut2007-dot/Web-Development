@@ -176,6 +176,15 @@
 
 
 
+
+//  Ternary Statement -->
+
+// let number = 12
+// number < 10 ? console.log("you enter less number") : console.log("you enter greater number")
+
+
+
+
 // Using Logical Statement -->
 
 

@@ -208,7 +208,7 @@ Number + Number = Number: Correct. (e.g., 2 + 2 = 4)
 
 
   -->   Conditonal Statement :-
-  if,if else,nested,switch case,logical operator(AND &&,OR ||) 
+  if,if else,nested,switch case,logical operator(AND &&,OR ||) , ternary statement
 
 Example of Switch case -->
 
