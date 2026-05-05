@@ -205,3 +205,21 @@ Number + Number = Number: Correct. (e.g., 2 + 2 = 4)
 -> Number to String: String(123) or (123).toString()
 -> Number to Boolean: Boolean(1) (This results in true) or Boolean(0) (This results in false).
 -> String to Number: Since prompt() gives you a string, you'll often need Number("22") to turn it back into a math-ready number.
+
+
+  -->   Conditonal Statement :-
+  if,if else,nested,switch case,logical operator(AND &&,OR ||) 
+
+Example of Switch case -->
+
+// switch (window.prompt("enter char")) {
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+//         console.log("entred char is vowel !")
+//         break;
+//     default:
+//         console.log('consolant')
+// }
