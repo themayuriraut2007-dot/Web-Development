@@ -137,9 +137,63 @@
 // console.log(rev)
 
 
-let result = " ";
-for (let i=5;i>=1;i--) {
-     result = result +i;
-}
-console.log(result)
+// let result = " ";
+// for (let i=5;i>=1;i--) {
+//      result = result +i;
+// }
+// console.log(result)
    
+
+
+// Leap year
+
+// let start = 2000;
+// let end = 2030;
+// let sum = 0;
+
+// for(year=start;year<=end;year++) {
+//      if((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+//           console.log(year);
+//           sum = sum + year
+//      }
+// }
+// console.log("sum of leap years = ",sum)
+
+
+
+// let start =Number(window.prompt("Enter start year"))
+// let end = Number(window.prompt("Enter start year"))
+// let sum =0 
+
+// for(year=start;year<=end;year++) {
+//      if((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+//           console.log(year);
+//           sum = sum + year
+//      }
+// }
+// console.log("sum of leap years = ",sum)
+
+
+
+// Nested loop -->
+
+let row = 0
+
+while (row < 7) {
+    let empty = 0
+    let column = 0
+    let paternString = ""
+    let emptyString = ""
+
+    while (empty < (6 - row)) {
+        emptyString += "<span>&nbsp;&nbsp<span>"
+        empty++
+    }
+    while (column <= row) {
+        paternString += " * "
+        column++
+    }
+    document.write(emptyString + paternString)
+    document.write("<br></br>")
+    row++
+}
