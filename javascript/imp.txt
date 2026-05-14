@@ -223,3 +223,12 @@ Example of Switch case -->
 //     default:
 //         console.log('consolant')
 // }
+
+
+// regex -> regular expersion -> pattern(Mininum length -8, atleast one uppercase char, atleast one lowercase char, atleast one number and a symbol)
+// match (return null/array), test(returns boolean)
+
+/ Password@123
+// Abc@123
+// 123@Something
+// ThisIsMyPassword1#
