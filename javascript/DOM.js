@@ -1,77 +1,125 @@
 // console.log("hello World")
 
-// document.getElementById("redbox").style.backgroundColor = "red"
+
+// Selected With Id -- >
+
+// document.getElementBYId(" ")
+
+// let heading = document.getElementById("heading"); 
+// console.log(heading);
+
+// we also use log ke bdle dir (object)
 
 
 
 
-// document.querySelector(".box").style.backgroundColor = "green";
+// Selected With Class -->
 
-// Ek hi select hoga querySelector mai(Single Element Return karta hai) 
+// document.getElementsByClassName("")
 
-
-
-
-// Agar pure karne hai to use this querySelectorAll(multiple element return krta hai)
-
-// console.log(document.querySelectorAll(".box"))
-
-// document.querySelectorAll(".box").forEach(e =>{
-//    e.style.backgroundColor = "green"
-// })
+//let headings = document.getElementsByClassName("heading3-class");
+//console.log(heading);
 
 
 
+// Selected With Tags -->
 
-// document.getElementsByTagName("div")
-//  it returns html collection
-
-
+// document.getElementsByTagName("p")
 
 
 
-// let target = document.getElementsByTagName("h2")
-// let target = document.getElementsByClassName("fourth")
-// let target = document.getElementById("i3")
+//Query Selector -->
+
+// document.querySelector("myId/myClass/tag")
+// return first element
 
 
-// let targets = document.querySelectorAll("li:nth-child(2)")
+// document.querySelectorAll("myId/myClass/tag")
+// return a node list
 
-// console.log(target)
-// console.log(targets)
+// let elements = document.querySelector("p");
+// console.log(elements);
+
+// let elements = document.querySelectorAll("p");
+// console.log(elements);
+
+// let elements = document.querySelectorAll(".heading3-class");
+// console.log(elements);
+
+
+// innerText And innerHTML-->
+
+let div = document.querySelector("div");
+console.log(div);
 
 
 
 
-// let students = [1,2]
+//   let target = document.getElementById("redbox").style.backgroundColor = "red";
 
-// if (students.length != 0) {
-//     console.log('students exits !')
-// } else {
-//     console.log("they don't")
-// }
-
-// let target = document.getElementById("btn1")
-
-// console.log(target)
+//   document.querySelector(".container").style.backgroundColor = "green";
 
 
 
 
 
-// toggle image
 
-// let image = document.getElementById('img1')
-// let btn = document.getElementById('btn1')
+// querySelectorery("h1");
+// h1.remove();
 
-// let show = true
+// let newBtn = document.createElement("button");
+// newBtn.innerText = "click me";
+// console.log(newBtn);
 
-// btn.onclick = () => {
-//     show = !show
-//     if (show) {
-//         image.style.display = "block"
-//     } else {
-//         image.style.display = "none"
-//     }
-// }
+
+// // Append(last add) -->
+
+// let div = document.querySelector("div")
+// div.append(newBtn)
+
+// same prepend(starting mai)
+
+
+
+
+// Create new heading -->
+
+//let newHeading =  document.createElement("h1");
+// newHeading.innerHTML = "<i> Hi , I am new! </i>";
+
+// document.querySelector("body").prepend(newHeading); 
+
+
+
+// Delete Element -->
+
+// let h1 = document.qu
+
+
+//Practice Questions -->
+
+// Q1] create a new button element. Give it a text "click me", background 
+// color of red & text color of white.
+
+// let newBtn = document.createElement("button");
+// newBtn.innerText = "click me";
+
+// newBtn.style.color = "white";
+// newBtn.style.backgroundColor = "red";
+
+// document.querySelector("body").prepend(newBtn);
+
+
+
+// Q2] create a <p> tag in html,give it a class and some styling.
+
+// we use classList
+
+ let para = document.querySelector("p");
+ para.classList.add("newClass");
+
+ // also we remove 
+//  para.classList.remove("newClass");
+
+
 
