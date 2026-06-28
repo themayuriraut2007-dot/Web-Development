@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 2</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:30px;
+}
+
+#element2{
+    width:500px;
+    height:300px;
+    border:2px solid black;
+    background:rgb(128,128,128);
+    margin-bottom:20px;
+}
+
+.slider{
+    margin-bottom:20px;
+}
+
+input[type="range"]{
+    width:180px;
+}
+
+form{
+    margin-top:20px;
+}
+
+input{
+    padding:8px;
+    margin:5px;
+}
+
+button{
+    padding:8px 20px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="element2"></div>
+
+<div class="slider">
+
+<label>RED</label>
+<input type="range" id="red" min="0" max="255" value="128">
+
+<label>GREEN</label>
+<input type="range" id="green" min="0" max="255" value="128">
+
+<label>BLUE</label>
+<input type="range" id="blue" min="0" max="255" value="128">
+
+</div>
+
+<h1 id="heading">This is a New Page</h1>
+
+<form id="form">
+
+<input type="text" id="name" name="name" placeholder="Enter your name">
+
+<input type="tel" id="number" name="number" placeholder="Mobile Number">
+
+<input type="email" id="email" name="email" placeholder="Email Address">
+
+<button type="submit">Submit</button>
+
+</form>
+
+<script src="task2.js"></script>
+
+</body>
+</html>
