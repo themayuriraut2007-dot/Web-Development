@@ -7,3 +7,4 @@ function welcome(user) {
 
 export default welcome;
 export { city, country};
+
